@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بنك أسئلة الإنترفيو | Levels</title>
+<link rel="stylesheet" href="levels.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="index.html">البرج <b>The Tower</b></a>
+  <nav><a href="index.html">المستويات</a><a href="bank.html" class="on">بنك الأسئلة</a></nav>
+  <span class="xpchip">0 XP</span>
+</header>
+<main class="bank" id="bank">
+  <h1>بنك أسئلة الإنترفيو</h1>
+  <p class="tiny">كل الأسئلة اللي جوه الدروس والبوسات، في مكان واحد. اقرا السؤال، جاوب بصوت عالي، وبعدين افتح الإجابة.</p>
+  <div class="filters">
+    <select id="bankstage" class="btn ghost"></select>
+    <input id="banksearch" type="search" placeholder="دوّر على كلمة: state, eloquent, async ...">
+    <span class="tiny" id="bankcount"></span>
+  </div>
+  <div id="banklist"></div>
+</main>
+<script src="data/catalog.js"></script>
+<script src="levels.js"></script>
+</body>
+</html>
