@@ -57,11 +57,12 @@
     bash: "if then else fi for in do done while case esac function return exit echo cd git php composer npm flutter dart artisan",
   };
   KW.blade = KW.php; KW.json = "true false null"; KW.yaml = "true false null";
+  KW.python = "False None True and as assert async await break class continue def del elif else except finally for from global if import in is lambda nonlocal not or pass raise return try while with yield self";
   function hl(src, lang) {
     lang = (lang || "").toLowerCase();
     var words = KW[lang]; if (words == null) return esc(src);
     var set = {}; words.split(" ").forEach(function (w) { set[w] = 1; });
-    var comment = lang === "sql" ? "--[^\\n]*" : lang === "bash" || lang === "yaml" ? "#[^\\n]*" : lang === "json" ? "(?!)" : "\\/\\/[^\\n]*|\\/\\*[\\s\\S]*?\\*\\/" + (lang === "php" || lang === "blade" ? "|#(?!\\[)[^\\n]*" : "");
+    var comment = lang === "sql" ? "--[^\\n]*" : lang === "bash" || lang === "yaml" || lang === "python" ? "#[^\\n]*" : lang === "json" ? "(?!)" : "\\/\\/[^\\n]*|\\/\\*[\\s\\S]*?\\*\\/" + (lang === "php" || lang === "blade" ? "|#(?!\\[)[^\\n]*" : "");
     var re = new RegExp("(" + comment + ")|(\"(?:\\\\.|[^\"\\\\\\n])*\"|'(?:\\\\.|[^'\\\\\\n])*')|\\b(\\d+(?:\\.\\d+)?)\\b|([A-Za-z_][\\w]*)", "g");
     var out = "", last = 0, m;
     while ((m = re.exec(src))) {

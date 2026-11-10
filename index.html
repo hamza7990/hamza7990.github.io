@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-base="">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,10 @@
   <meta name="description" content="Hamza Saied builds Arabic-first mobile apps with their backends, cinematic websites, and data analysis. Selected work: GREB, Qahwati, Lamaa, Maher, Azm, Wasl, globalbroker.sa.">
   <meta name="theme-color" content="#f5f3ee">
   <link rel="icon" href="assets/hamza.webp">
+  <link rel="canonical" href="./">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="ar" href="ar/">
+  <link rel="alternate" hreflang="x-default" href="./">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@500;600&display=swap" rel="stylesheet">
@@ -24,6 +28,7 @@
       <a href="#about">About</a>
       <a href="#data">Data</a>
       <a href="learn/">Learn</a>
+      <a class="bar__lang" href="ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a>
       <a class="bar__cta" href="#hire">Hire me</a>
     </nav>
   </header>
@@ -336,12 +341,12 @@
         <div class="learn__body">
           <p class="kicker">Free course, in Arabic</p>
           <h2 id="t-learn">The Tower: Flutter and Laravel, one floor at a time.</h2>
-          <p>I built the course I wanted before interviews. It starts with logic puzzles and climbs through Dart, Flutter, PHP and Laravel to a full mock interview. Every level explains the idea, makes you type the code by hand, sets a challenge, and keeps the next floor locked behind a quiz.</p>
+          <p>I built the course I wanted before interviews. It starts with logic puzzles and climbs through Dart, Flutter, PHP and Laravel, then data structures, algorithms and AI, to a full mock interview. Every level explains the idea, makes you type the code by hand, sets a challenge, and keeps the next floor locked behind a quiz.</p>
           <ul class="learn__facts">
-            <li><b>77</b>levels</li>
-            <li><b>209</b>typing drills</li>
-            <li><b>677</b>quiz questions</li>
-            <li><b>571</b>interview questions</li>
+            <li><b>110</b>levels</li>
+            <li><b>302</b>typing drills</li>
+            <li><b>984</b>quiz questions</li>
+            <li><b>850</b>interview questions</li>
           </ul>
           <p class="hero__cta">
             <a class="btn" href="learn/">Open the Tower</a>
@@ -349,7 +354,10 @@
           </p>
         </div>
         <ol class="learn__tower" aria-hidden="true">
-          <li style="--c:#12a66a"><span>6</span>Interview basics</li>
+          <li style="--c:#12a66a"><span>9</span>Interview basics</li>
+          <li style="--c:#db2777"><span>8</span>AI</li>
+          <li style="--c:#a16207"><span>7</span>Algorithms</li>
+          <li style="--c:#4d7c0f"><span>6</span>Data structures</li>
           <li style="--c:#e5484d"><span>5</span>Laravel</li>
           <li style="--c:#7a5af8"><span>4</span>PHP</li>
           <li style="--c:#2b5bff"><span>3</span>Flutter</li>
@@ -380,7 +388,6 @@
 
   <a class="fab" href="#hire">Hire me</a>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
   <script src="main.js" defer></script>
 </body>
 </html>
